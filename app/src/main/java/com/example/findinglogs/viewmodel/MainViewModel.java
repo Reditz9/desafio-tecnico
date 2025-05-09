@@ -36,6 +36,7 @@ public class MainViewModel extends AndroidViewModel {
     }
 
     public LiveData<List<Weather>> getWeatherList() {
+        startFetching();
         return weatherList;
     }
 
